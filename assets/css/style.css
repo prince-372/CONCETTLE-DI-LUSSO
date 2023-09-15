@@ -28,6 +28,7 @@
     --bg-white:#fff;
     --bg-dark-pink:#9E3040;
     --bg-skin:#f7f7f7;
+    --bg-wheat:#F3F5F6;
 }
 .bg-dark-pink{
     background-color: var(--bg-dark-pink);
@@ -37,6 +38,9 @@
 }
 .bg-white{
     background-color: var(--bg-white);
+}
+.bg-wheat{
+    background-color:var(--bg-wheat) ;
 }
 .f-white{
     color: var(--text-white);
@@ -90,7 +94,7 @@
     font-size: var(--fs-18);
     font-weight: var(--fw-600);
 }
-/* 2nd section
+/* 2nd section */
 .f-free{
     font-size: var(--fs-30);
     font-weight: var(--fw-600);
@@ -98,7 +102,52 @@
 .f-for{
     font-size: var(--fs-17);
     font-weight: var(--fw-400);
-} */
+}
+/* 3rd section */
+.f-sec-explore{
+    font-size: var(--fs-58);
+    font-weight: var(--fw-600);
+    color: var(--text-white);
+}
+.f-sec-main{
+    font-size: var(--fs-36);
+    font-weight: var(--fw-600);
+}
+.f-card-paragraph{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-400);
+}
+.f-card-prize{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+}
+.f-card-less{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-400);
+}
+.f-card-btn{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-600);
+}
+/* 4th section */
+.sec4-heading{
+    font-size: var(--fs-36);
+    font-weight: var(--fw-700);
+}
+.sec4-paragraph{
+    font-size: var(--fs-17);
+    font-weight: var(--fw-400)  ;
+}
+/* 5th section */
+.sec-5-head{
+    font-size:var(--fs-24);
+    font-weight: var(--fw-700);
+}
+/* 6th section */
+.sec6-card-content{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+}
 *{
     margin: 0;
     padding: 0;
@@ -160,21 +209,176 @@ border: none;
 border-radius: 5px;
 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
-/* 2nd section
-.bg-line{
-    background-image: url(../image/line.png);
+/* 2nd section */
+.py-95{
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.f-line{
+    position: absolute;
+    bottom: 47%;
+    z-index: -1;
+}
+/* 3rd section */
+.bg-sec-3{
+    background-image: url(../image/bg-sec-3.png);
     background-repeat: no-repeat;
-} */
+    border-radius: 5%;
+}
+.sec-card{
+    border-radius: 10px;
+    background: #F3F5F6;
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
+    padding: 23px 14px 32px 14px;
+    max-width: 329px;
+}
+.f-card-paragraph{
+    max-width: 300px;  
+}
+.f-card-btn{
+    padding: 8px 15px;
+    border: none;
+     border-radius: 5px;
+}
+.gap-15{
+    gap: 15px;
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+/* 4th section */
+.sec4-card{
+    border-radius: 30px;
+    max-width: 519px;
+    padding: 30px 16px;
+}
+.sec4-heading{
+    max-width: 484px;
+}
+.sec4-paragraph{
+    max-width: 457px;
+}
+.sec-image{
+    border-radius: 24px;
+}
+.pt-12{
+    padding-top: 12px;
+}
+/* 5th section */
 
+.pt-100 {
+    padding-top: 100px;
+}
+.mt-md-30 {
+    margin-top: 30px;
+}
+.sec-5-card {
+    max-width: 410px;
+    height: 650px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var();
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
+}
+.sec-5-img {
+    border-radius: 10px;
+}
+.sec4-paragraph{
+    max-width:919px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 190%;
+}
+.sec-5-head{
+    max-width: 302px;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pl-18{
+    padding-left: 18px;
+}
+.pr-19{
+    padding-right: 19px;
+}
+.pb-41{
+ padding-bottom: 41px;
+}
+.pb-46{
+    padding-bottom: 46px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.pt-31{
+    padding-top: 31px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+/* 6th section */
+.sec6-card{
+    border-radius: 30px;
+    max-width: 1280px;
+}
+.f-sec-svg{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.icon-set-1{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+.icon-set-2{
+    position: absolute;
+    top: 65%;
+    right: 1%;
+}
 
-
-
-
-
-
-
-
-
+@media(max-width:1200px){
+    .phoneView{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        right: -100%;
+        transition: all 1000ms linear;
+        background-color: orange;
+    }
+    .phoneView.show{
+        right: 0;
+    }
+    .gap{
+        gap: 40px;
+    }
+    .pl-40{
+        padding-left: 0;
+    }
+    .ml-30{
+        margin-left: 0;
+    }
+    .pl-150{
+        padding-left: 0;
+    }
+    .menu{
+        z-index: 1;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(min-width:1012px){
+    .menu{
+        display: none;
+    }
+}
 
 
 @media (min-width:1400) {
