@@ -210,6 +210,13 @@
 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
 max-width: 49px;
 padding: 13px 13px;
+transition: all 500ms linear;
+}
+.box-hover{
+    transition: .4s;
+}
+.box-hover:hover{
+   transform: translateY(-30%);
 }
 .f-nav-btn{
     border-radius: 5px;
@@ -235,9 +242,10 @@ border: 1px solid transparent;
 .dropdown-content{
     display:grid;
     min-width: 100px;
-    background-color: #686868;
-    color: #FFF;
-    padding-left: 30px;
+    background-color: #fff;
+    color: #070202;
+    padding-left:4px ;
+    padding-right: 4px;
     position: absolute; 
     top: 100%;
     left :0;
@@ -421,22 +429,47 @@ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 .grid-set-1{
     grid-row: 1/2;
     grid-column: 1/2;
+    transition: all 200ms linear;
+}
+.grid-set-1:hover{
+    transition: all 200ms linear;
+    transform: scale(105%);
 }
 .grid-set-2{
     grid-row: 2/3;
     grid-column: 1/2;
+    transition: all 200ms linear;
+}
+.grid-set-2:hover{
+    transition: all 200ms linear;
+    transform: scale(105%);
 }
 .grid-set-3{
     grid-row: 3/4;
     grid-column: 1/2;
+    transition: all 200ms linear;
+}
+.grid-set-3:hover{
+    transition: all 200ms linear;
+    transform: scale(105%);
 }
 .gri-set-4{
     grid-row: 4/5;
     grid-column: 1/2;
+    transition: all 200ms linear;
+}
+.grid-set-4:hover{
+    transition: all 200ms linear;
+    transform: scale(105%);
 }
 .grid-set-5{
     grid-row: 5/6;
     grid-column: 1/2;
+    transition: all 200ms linear;
+}
+.grid-set-5:hover{
+    transition: all 200ms linear;
+    transform: scale(105%);
 }
 /* 8th section */
 .f-mail-paragraph{
@@ -488,6 +521,12 @@ input{
 }
 .f-footer-policy{
     max-width: 252px;
+}
+.f-footer-policy:hover{
+    -webkit-text-stroke: 0.6px black;
+}
+.f-footer-policy:hover{
+    -webkit-text-stroke: 0.6px black;
 }
 @media (max-width:1200px) {
     label[id="menu"] {
