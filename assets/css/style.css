@@ -63,10 +63,7 @@
     font-weight: var(--fw-600);
     font-family: 'Hind Siliguri', sans-serif;
 }
-.f-nav-btn:hover{
-    font-size: var(--fs-18);
-    font-weight: var(--fw-600);
-}
+
 .f-nav-top{
     font-size: var(--fs-14);
     font-weight: var(--fw-400);
@@ -218,7 +215,7 @@ padding: 13px 13px;
     border-radius: 5px;
 box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
 padding: 10px 32px;
-border: none;
+border: 1px solid transparent;
 }
 .f-nav-btn:hover{
    color: #9E3040;
@@ -307,6 +304,9 @@ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 .pb-25{
     padding-bottom: 25px;
 }
+.mt-45{
+    margin-top: 45px;
+}
 /* 4th section */
 .sec4-card{
     border-radius: 30px;
@@ -339,8 +339,8 @@ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     margin-top: 30px;
 }
 .sec-5-card {
-    max-width: 410px;
-    height: 650px;
+    /* max-width: 410px;
+    height: 650px; */
     flex-shrink: 0;
     border-radius: 10px;
     background: var();
@@ -492,7 +492,7 @@ input{
     display: none !important;
 }
 .f-footer-policy{
-    max-width: 190px;
+    max-width: 252px;
 }
 @media (max-width:1200px) {
     label[id="menu"] {
@@ -535,6 +535,16 @@ input{
     }
     .fix-lft {
         left: 0;
+    }
+}
+@media(min-width:768px){
+    .sec-5-card {
+        max-width: 410px;
+        height: 650px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: var();
+        box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
     }
 }
 @media(min-width:1200px){
