@@ -1,13 +1,14 @@
-let phoneView = document.querySelector(".phoneView")
-let menu = document.querySelector(".menu")
-let span1 = document.querySelector(".span1")
-let span2 = document.querySelector(".span2")
-let span3 = document.querySelector(".span3")
 
-menu.addEventListener("click",function(){
-    phoneView.classList.toggle("show");
-    document.querySelector("body").classList.toggle("overflow-hidden")
-    span1.classList.toggle("span4")
-    span2.classList.toggle("span5")
-    span3.classList.toggle("span6")
-})
+let a = document.getElementById("view")
+let flow = document.querySelector(".flow")
+let cross4 = document.querySelector(".span-4")
+let cross5 = document.querySelector(".span-5")
+let cross6 = document.querySelector(".span-6")
+
+function responsive() {
+    a.classList.toggle("fix-lft")
+    flow.classList.toggle("flow-hidden")
+    cross4.classList.toggle("span-1")
+    cross5.classList.toggle("span-2")
+    cross6.classList.toggle("span-3")
+}
